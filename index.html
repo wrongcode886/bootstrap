@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>bootstrap网页</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script>
+		<script src="js/respond.min.js"></script>
+		<![endif]-->
+
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-inverse" role="navigation">
+		<div class="navbar-header">
+			<button class="navbar-toggle" data-toggle="collapse" data-target="#navbar_collapse">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a href="#" class="navbar-brand">某管理系统</a>
+		</div><!-- navbar-header结束 -->
+
+		<div class="collapse navbar-collapse" id="navbar_collapse">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="#">首页</a></li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">功能<span class="caret"></span>
+						<ul class="dropdown-menu">
+							<li class="dropdown-header">业务功能</li>
+							<li ><a href="#" >信息建立</a></li>
+							<li><a href="#">信息查询</a></li>
+							<li><a href="#">信息管理</a></li>
+							<li class="divider"></li>
+							<li class="dropdown-header">系统功能</li>
+							
+							<li><a href="#">设置</a></li>
+						</ul>
+					
+					</a>
+				</li>
+				<li><a href="#">帮助</a></li>
+			</ul>
+			
+			<form action="#" class="navbar-form navbar-right" role="search">
+				<div class="form-group">
+					<input type="text" class="form-control" placeholder="用户名">
+					<input type="text" class="form-control" placeholder="密码">
+				</div>
+				<button type="submit" class="btn btn-default">登录</button>
+			</form>
+		</div>
+	</nav>
+
+<ul class="nav nav-tabs" role="tablist" id="myTab">	
+		<li class="active"><a href="#home" role="tab" data-toggle="tab">第一项</a></li>
+		<li><a href="#second" role="tab" data-toggle="tab">第二项</a></li>
+		<li><a href="#third" role="tab" data-toggle="tab">第三项</a></li>
+		<li><a href="#forth" role="tab" data-toggle="tab">第四项</a></li>	
+</ul>
+<div class="tab-content">
+	<div class="tab-pane" id="home">
+		<p>我是第一项</p>
+	</div>
+	<div class="tab-pane" id="second">
+		<p>我是第二项</p>
+	</div>
+	<div class="tab-pane" id="third">
+		<p>我是第三项</p>
+	</div>
+	<div class="tab-pane" id="forth">
+		<p>我是第四项</p>
+	</div>
+</div>
+
+<div class="panel panel-success">
+	<div class="panel-heading">我是头部</div>
+	<div class="panel-body">
+		<p>我是内容</p><p>我是内容</p><p>我是内容</p><p>我是内容</p><p>我是内容</p><p>我是内容</p><p>我是内容</p><p>我是内容</p><p>我是内容</p><p>我是内容</p>
+	</div>
+	<div class="panel-footer">我是底部</div>
+</div>
+
+<table class="table table-bordered table-hover table-striped">
+	<thead>
+		<th>1</th>
+		<th>2</th>
+		<th>3</th>
+	</thead>
+	<tbody>
+		<tr>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>2</td>
+			<td>2</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>3</td>
+			<td>3</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>4</td>
+			<td>4</td>
+		</tr>
+	</tbody>
+</table>
+
+
+
+
+
+
+
+	<script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+
+	<script type="text/javascript">
+		$(function(){
+			$('#myTab a[href="#second"]').tab('show');
+		});
+	</script>
+</body>
+</html>
